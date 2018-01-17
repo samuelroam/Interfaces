@@ -21,17 +21,23 @@ public class Alumnos {
 	alumnos.add(alumno);
 	
 	
-	ArrayList<String> nombre = new ArrayList<String>();
+	ArrayList<String> nombres = new ArrayList<String>();
 	
-	nombre.add("Aitor Menta");
-	nombre.add("Carlos");
-	nombre.add("Juanlu");
+	nombres.add("Aitor Menta");
+	nombres.add("Carlos");
+	nombres.add("Juanlu");
 	
-	Iterator<String> i = nombre.iterator();
+	Iterator<String> i = nombres.iterator();
 		while(i.hasNext()){
-			String nombres = i.next();
-			System.out.println(nombres);
+			String nombre = i.next();
+			System.out.println(nombre);
+			
+			
+	Iterator<Persona> j = alumnos.iterator();
+		while(j.hasNext()){
+			Persona alumno = j.next();
+			System.out.println(alumno);
 		}
-
+		}
 }
 }
